@@ -7,12 +7,6 @@ var options = {
   }, {
     name: 'PRODUCT B',
     data: [13, 23, 20, 8, 13, 27]
-  }, {
-    name: 'PRODUCT C',
-    data: [11, 17, 15, 15, 21, 14]
-  }, {
-    name: 'PRODUCT D',
-    data: [21, 7, 25, 13, 22, 8]
   }],
     chart: {
     type: 'bar',

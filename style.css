@@ -1,8 +1,50 @@
-body { 
-    background: pink;
+
+/***************************************** NAVBAR ***************************************/
+
+img {
+    width: 6.25rem;
+}
+
+.d-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #chart {
-    max-width: 650px;
-    margin: 35px auto;
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid black;
+}
+
+.soloClasif {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.medal-wrapper {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.medal-wrapper {
+    border-radius: 50%;
+    font-size: 1.2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: lightblue;
+}
+
+.medal-wrapper i {
+    color: white;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
