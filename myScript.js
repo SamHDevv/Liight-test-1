@@ -1,56 +1,48 @@
-import ApexCharts from 'apexcharts'
-
 var options = {
-    series: [{
-    name: 'PRODUCT A',
-    data: [44, 55, 41, 67, 22, 43]
-  }, {
-    name: 'PRODUCT B',
-    data: [13, 23, 20, 8, 13, 27]
-  }],
-    chart: {
-    type: 'bar',
-    height: 350,
-    stacked: true,
-    toolbar: {
-      show: true
-    },
-    zoom: {
-      enabled: true
+  series: [{
+  data: [21, 22, 10, 28, 16, 21, 13, 30]
+}],
+  chart: {
+  height: 350,
+  type: 'bar',
+  events: {
+    click: function(chart, w, e) {
+      // console.log(chart, w, e)
     }
-  },
-  responsive: [{
-    breakpoint: 480,
-    options: {
-      legend: {
-        position: 'bottom',
-        offsetX: -10,
-        offsetY: 0
-      }
-    }
-  }],
-  plotOptions: {
-    bar: {
-      borderRadius: 8,
-      horizontal: false,
-    },
-  },
-  xaxis: {
-    type: 'datetime',
-    categories: ['01/01/2011 GMT', '01/02/2011 GMT', '01/03/2011 GMT', '01/04/2011 GMT',
-      '01/05/2011 GMT', '01/06/2011 GMT'
-    ],
-  },
-  legend: {
-    position: 'right',
-    offsetY: 40
-  },
-  fill: {
-    opacity: 1
   }
-  };
+},
+colors: colors,
+plotOptions: {
+  bar: {
+    columnWidth: '45%',
+    distributed: true,
+  }
+},
+dataLabels: {
+  enabled: false
+},
+legend: {
+  show: false
+},
+xaxis: {
+  categories: [
+    ['John', 'Doe'],
+    ['Joe', 'Smith'],
+    ['Jake', 'Williams'],
+    'Amber',
+    ['Peter', 'Brown'],
+    ['Mary', 'Evans'],
+    ['David', 'Wilson'],
+    ['Lily', 'Roberts'] 
+  ],
+  labels: {
+    style: {
+      colors: colors,
+      fontSize: '12px'
+    }
+  }
+}
+};
 
-  var chart = new ApexCharts(document.querySelector("#chart"), options);
-  chart.render();
-
-
+var chart = new ApexCharts(document.querySelector("#chart"), options);
+chart.render();

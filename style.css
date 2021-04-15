@@ -5,19 +5,24 @@ img {
     width: 6.25rem;
 }
 
-.d-flex {
+.contenedor {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
-#chart {
-    width: 20rem;
-    height: 20rem;
-    border: 1px solid black;
+.d-flex div {
+    
 }
 
-.soloClasif {
+.solo-clasif-wrapper {
+    box-shadow: 1px 1px 3px 4px #ccc;
+    border-radius: 1rem;
+}
+
+.solo-clasif {
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
@@ -35,7 +40,7 @@ img {
     font-size: 1.2rem;
     width: 2.5rem;
     height: 2.5rem;
-    background: lightblue;
+    background: #3f7df1;
 }
 
 .medal-wrapper i {
@@ -43,8 +48,6 @@ img {
 }
 
 hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-left: 0;
+    margin-right: 0;
   }
