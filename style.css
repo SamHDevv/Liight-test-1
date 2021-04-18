@@ -1,37 +1,38 @@
 
-/***************************************** NAVBAR ***************************************/
-/* .body {
-    position: relative;
-} */
+/***************************************** TOP IMG ***************************************/
+
 img {
-    width: 6.25rem;
+    width: 9rem;
+    padding-top: 2rem;
 }
 
+/***************************************** CONTAINER WRAPPER ***************************************/
 .container-wrapper {
+    position:relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    min-height: 100vh;
-    position:relative;
-    
-    
-    
+    min-height: 100vh;    
 }
-
+/***************************************** CHALLENGERS ***************************************/
 .challengers {
-    flex: 1;
+    padding-top: 2rem;
 }
 
+/***************************************** CHARTS ***************************************/
 #chart-bars {
-    flex: 1;
+    padding-bottom: 2rem;
 }
 
+/***************************************** INDIVIDUAL ***************************************/
 .solo-clasif-wrapper {
     box-shadow: 1px 1px 3px 4px #ccc;
     border-radius: 1rem;
-    flex: 1;
+    display: flex;
+    position: relative;
+    /* flex: 1; */
 }
 
 .solo-clasif {
@@ -40,9 +41,8 @@ img {
     justify-content: space-evenly;
     align-items: center;
     margin: 1rem;
-    
 }
-
+/***************************************** MEDAL ***************************************/
 .medal-wrapper {
     display:flex;
     justify-content: center;
@@ -53,22 +53,94 @@ img {
     height: 2.5rem;
     background: #3f7df1;
     margin-right: 1rem;
-    
 }
 
 .medal-wrapper i {
     color: white;
 }
 
+.medal-wrapper p {
+    color: white;
+}
+
+/***************************************** CO2 ***************************************/
 .co2 {
     flex: 1;
 }
 
- .pop-up {
-    position: absolute;
-    max-width: 800px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    visibility: hidden;
+/***************************************** INDIVIDUAL TABLE INFO ***************************************/
+table {
+    width: 100%;
+    font-weight: bold;
+    
+}
+
+.clasification {
+    overflow-x: auto;
+}
+
+.table-individual-index {
+    padding-top: 0.8rem;
+}
+ 
+.red-background {
+    background-color: #f4bfc7;
+}
+
+.blue-background {
+    background-color: #bae0ff;
+}
+
+.fa-bolt {
+    color: #fab325;
+}
+
+
+/***************************************** MODAL INFO ***************************************/
+
+.modal {
+    
+    display: none;
+    padding-top: 100px;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    
+    width: 70%;
+    margin: auto;
+    padding: 15px;
+}
+
+.modal-content h4 {
+    color: #3f7df1;
+
+}
+
+#close-info {
+    position: relative;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+/***************************************** MEDIA QUERY ***************************************/
+@media (max-width: 350px) {
+    .modal-content {
+        width: 80%;
+    }
+}
+@media (max-width: 420px) {
+    .solo-clasif-wrapper h4 {
+        font-size: 1rem;
+    }
 }
