@@ -1,12 +1,15 @@
+
 var optionsCircle = {
     series: [15],
     chart: {
-    height: 300,
+    height: 350,
     type: 'radialBar',
     toolbar: {
-      show: false
+      show: false,
+      
     }
   },
+  
   plotOptions: {
     radialBar: {
       startAngle: -135,
@@ -15,7 +18,9 @@ var optionsCircle = {
         margin: 0,
         size: '70%',
         background: '#fff',
-        image: undefined,
+        // image: './img/seedling.png',
+        // imageWidth: -10,
+        // imageHeight: -10,
         imageOffsetX: 0,
         imageOffsetY: 0,
         position: 'front',
@@ -43,10 +48,10 @@ var optionsCircle = {
       dataLabels: {
         show: true,
         name: {
-          offsetY: -10,
+          offsetY: 5,
           show: true,
-          color: '#888',
-          fontSize: '17px',
+          color: '#29a157',
+          fontSize: '20px',
         },
         value: {
           formatter: function(val) {
@@ -55,19 +60,21 @@ var optionsCircle = {
           color: '#111',
           fontSize: '36px',
           show: true,
+          offsetY: -40,
         }
       }
     }
   },
   fill: {
     colors: ['#4aff00'],
-    type: 'solid',
+   
+    type: 'solid',  
     
   },
   stroke: {
     lineCap: 'round'
   },
-  labels: ['Kg CO2eq'],
+  labels: [`Kg CO2eq`],
   };
 
   var chart = new ApexCharts(document.querySelector("#chart-circle"), optionsCircle);

@@ -15,6 +15,8 @@ img {
     align-items: center;
     flex-flow: column wrap;
     min-height: 100vh;    
+    color: #767477;
+    margin-bottom: 10rem;
 }
 /***************************************** CHALLENGERS ***************************************/
 .challengers {
@@ -32,7 +34,6 @@ img {
     border-radius: 1rem;
     display: flex;
     position: relative;
-    /* flex: 1; */
 }
 
 .solo-clasif {
@@ -66,6 +67,8 @@ img {
 /***************************************** CO2 ***************************************/
 .co2 {
     flex: 1;
+    text-align: center;
+    margin-top: 1.5rem;
 }
 
 /***************************************** INDIVIDUAL TABLE INFO ***************************************/
@@ -99,7 +102,7 @@ table {
 /***************************************** MODAL INFO ***************************************/
 
 .modal {
-    
+    text-align:left;
     display: none;
     padding-top: 100px;
     z-index: 1;
@@ -113,24 +116,48 @@ table {
 }
 
 .modal-content {
-    
-    width: 70%;
+    width: 84%;
     margin: auto;
-    padding: 15px;
+    padding-top: 0.6rem;
+    height: 70vh;
+    overflow: scroll;
+    border-radius: .5rem;
+    
+}
+.modal-info-content {
+    font-size: .9rem;
+    margin: 0 0.3rem 0;
+ 
 }
 
 .modal-content h4 {
-    color: #3f7df1;
 
+    color: #3f7df1;
+    text-align: center;
 }
 
 #close-info {
-    position: relative;
+    
+    position: absolute;
+    display: block;
     color: #aaaaaa;
-    float: right;
+    top:0%;
+    right: 10%;
+    text-align: right;
     font-size: 28px;
     font-weight: bold;
 
+}
+
+#close-individual {
+    position: absolute;
+    display: block;
+    color: #aaaaaa;
+    top:0%;
+    right: 10%;
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 /***************************************** MEDIA QUERY ***************************************/
@@ -142,5 +169,17 @@ table {
 @media (max-width: 420px) {
     .solo-clasif-wrapper h4 {
         font-size: 1rem;
+    }
+}
+
+@media (min-width:768px){
+    .modal-content {
+        width: 50%;
+    }
+}
+
+@media (min-width:1080px){
+    .modal-content {
+        width: 40%;
     }
 }
